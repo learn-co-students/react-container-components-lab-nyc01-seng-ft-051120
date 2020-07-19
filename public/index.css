@@ -1,0 +1,9 @@
+.container{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  width: 25em;
+  border-style: dotted;
+  margin-bottom: 2em;
+}
