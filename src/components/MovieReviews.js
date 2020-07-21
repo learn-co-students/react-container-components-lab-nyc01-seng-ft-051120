@@ -1,10 +1,17 @@
 import React from 'react'
 import Review from './Review'
+import SearchReview from './Review'
 const MovieReviews = (props) => {
+
+let reviews = props.reviews
+  if (props.reviews.docs){
+     reviews = props.reviews.docs
+   }
+
   return(
-    props.reviews.map((review, index) =>
-    <Review key={index} review={review}/>
-  )
+    reviews.map((review, index) =>
+    <Review id={props.id} key={index} review={review}/>
+    )
   )
 }
 
